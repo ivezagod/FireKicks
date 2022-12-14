@@ -1,0 +1,110 @@
+body {
+  background-color: #f6f6f6;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-top: 50px;    
+    font-size: 30px;
+}
+.MessageUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#Name {
+    margin-bottom: 50px;
+    border: none;
+    width: 280px;
+    
+}
+
+#Email {
+  border: none;
+  width: 280px;
+}
+
+#phoneNum {
+  margin-bottom: 50px;
+  border: none;
+  width: 280px;
+}
+#Message {
+    margin-top: 50px;
+    height: 180px;
+    width: 280px;
+    margin-right: 100px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+
+
+#Message:focus {
+  outline: 3px solid #F10422 ;
+}
+#Name:focus {
+  outline: 3px solid #F10422 ;
+}
+
+#Email:focus {
+  outline: 3px solid #F10422;
+}
+
+#phoneNum:focus {
+  outline: 2px solid #F10422;
+}
+
+#backGroundImg {
+  background-image: url(../tike-blur.jpg);
+  background-position: center;
+  height: 800px;
+}
+
+
+
+img {
+  margin: 0;
+}
+
+input#phoneNum::-webkit-outer-spin-button,
+input#phoneNum::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#Message {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sumbitButton {
+  background-color: #F10422;
+  padding: 20px 40px;
+  margin-right: 100px;
+  color: white;
+}
+
+#sumbitButton:hover {
+  background-color: #aa3a47;
+  
+}
+  
+

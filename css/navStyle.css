@@ -1,0 +1,204 @@
+#blackColor {
+	background-color: black;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav #hamburgerCheckbox {
+	display: none;
+}
+
+nav .hamburgerButton {
+	display: none;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+nav img {
+    height: 50px;
+    width: 70px;
+    position: relative;
+    top: 8px;
+}
+
+.Logo {
+    display: flex;
+    margin-left: 100px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+	margin: 0;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+	transition: background-color 0.8s;
+    background-color: #F5F5F5;
+    color: black;
+    padding: 28px 40px;
+	z-index: 0;
+}
+
+h2 {
+    color: white;
+
+}
+input {
+    height: 30px;
+    width: 200px;
+    margin-right: 100px ;
+    border-radius: 25px;
+} 
+
+input::placeholder {
+	padding-left: 20px;
+}
+
+
+@media (max-width: 1015px) {
+	nav {
+		display: block;
+		position: relative;
+		min-height: 40px;
+	}
+
+	nav ul li a:hover {
+		background-color: #F5F5F5;
+		color: black;
+		padding: 40px;
+	}
+
+    input#Search {
+		display: none;
+	}
+
+    .Logo {
+        display: flex;
+        margin-left: 100px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        position: relative;
+        right: 80px;
+    }
+
+	nav #hamburgerCheckbox {
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+		z-index: 3;
+	}
+
+	nav #hamburgerCheckbox {
+		opacity: 0;
+	}
+
+	nav .hamburgerButton {
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 8px;
+		right: 10px;
+		box-sizing: border-box;
+	}
+
+	nav .hamburgerButton .hamburgerLine {
+		width: 60%;
+		height: 5%;
+		background-color: white;
+		position: relative;
+		top: 50%;
+		left: 20%;
+		transform: translateY(-50%);
+	}
+
+	nav .hamburgerButton .hamburgerLine::before {
+		content: "";
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+
+	nav .hamburgerButton .hamburgerLine::after {
+		content: "";
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+
+	nav ul {
+		display: none; 
+		margin-top: 14px;
+		padding: 0px;
+	}
+
+	nav ul li a {
+		display: block;
+	}
+
+	
+	nav #hamburgerCheckbox:hover {
+		cursor: pointer;
+	}
+
+	nav #hamburgerCheckbox:hover ~ .hamburgerButton {
+		background-color:#F10422;
+	}
+
+	nav #hamburgerCheckbox:checked ~ ul {
+		display: block;
+	}
+
+	nav #hamburgerCheckbox:checked ~ .hamburgerButton .hamburgerLine {
+		transform: rotate(45deg);
+	}
+
+	nav #hamburgerCheckbox:checked ~ .hamburgerButton .hamburgerLine::before {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
+	nav #hamburgerCheckbox:checked ~ .hamburgerButton .hamburgerLine::after {
+		display: none;
+	}
+}
+
+

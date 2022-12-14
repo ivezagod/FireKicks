@@ -1,0 +1,116 @@
+.products {
+    background-color: #f5f5f5;
+}
+
+
+.products h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    z-index: 2;
+    position: relative;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productContainer  a img {
+    width: 470px;
+    position: relative;
+    left: 100px;
+    z-index: 0;
+    bottom: 100px;
+}
+
+.productContainer  a div {
+    position: relative;
+    top: 300px;
+    right: 180px;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+}
+.productContainer a img:hover {
+    cursor: pointer;
+    
+}
+
+#specialShoe {
+    position: relative;
+    top: 40px;
+    z-index: 0;
+}
+#specialText {
+    position: relative;
+    right: 20px;
+}
+
+@media (max-width: 1270px) {
+    .productContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      right: 120px;
+    }  
+  
+    .productContainer  a div {
+      text-align: center;
+      font-size:20px;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: black;
+      z-index: 2;
+      position: relative;
+      top: -100px;
+      right: -10px;
+      left: 150px;
+    }   
+  
+    #specialShoe {
+      position: relative;
+      left: 0px;
+      top: 80px;
+  }
+  
+  #specialText {
+      position: relative;
+      right: 0px;
+      top: 30px;
+  }
+
+
+.productContainer  a img {
+    width: 470px;
+    position: relative;
+    left: 120px;
+    z-index: 0;
+    bottom: 100px;
+
+}
+  }
+
+  @media (max-width: 480px) {
+    .productContainer  a img {
+        width: 320px;
+        position: relative;
+        left: 100px;
+        z-index: 0;
+    }
+    .productContainer  a div {
+        text-align: center;
+        font-size:20px;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: black;
+        z-index: 2;
+        position: relative;
+        top: -100px;
+        right: -10px;
+        left: 100px;
+      }  
+}

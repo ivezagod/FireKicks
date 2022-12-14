@@ -1,0 +1,137 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+} 
+
+h1 {
+    font-family: 'Anton', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.footerImgs  img {
+    height: 30px;
+    width: 30px;
+   position: relative;
+   right: 50px;
+   top: 30px;
+   margin-right: 8px;
+
+
+}
+.footerSection p {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    padding-left: 40px;
+} 
+
+.folowUs p {
+    position: relative;
+    right: 36px;
+    font-size: 23px;
+    top: 15px;
+}
+
+#folowUsText {
+    position: relative;
+    right:90px;
+}
+
+span {
+    color:#F10422 ;
+}
+
+.greyColor {
+    background-color:#ebeef0 ;
+    min-height: 150px;
+}
+
+a#footerLink {
+    color:#F10422;
+    background-color:black;
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 1000px) {
+
+    .noMargin {
+        margin-top:-20px ;
+    }
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 40px;
+    }
+
+    #location {
+        margin-top: 20px;
+        margin-bottom: 20px;
+       margin-left: 120px;
+    }
+
+    #folowUsText {
+        position: unset;
+    }
+    .footerImgs  img {
+        position: relative;
+        margin-top: 10px;
+        left: 40px;
+        top: 0;
+    }
+
+
+
+
+
+}
+
+@media(max-width: 480px) {
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 40px;
+    }
+
+    #location {
+        margin-top: 20px;
+        margin-bottom: 20px;
+       margin-left: 80px;
+    }
+
+    #folowUsText {
+        position: unset;
+    }
+    .footerImgs  img {
+        position: relative;
+        margin-top: 10px;
+        left: 40px;
+        top: 0;
+    }
+}
+
+@media(max-width: 380px) {
+    #location {
+        margin-left: 30px;
+    }
+}
