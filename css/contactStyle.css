@@ -1,110 +1,173 @@
 body {
-  background-color: #f6f6f6;
-  font-family: 'Montserrat', sans-serif;
+    background-color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  
+  
+  h1 {
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding-top: 120px;    
+      font-size: 50px;
+  }
 
-}
-
-
-h1 {
-    text-align: center;
+  #messageUs {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+   
+  }
+  #info {
     color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+
+  }
+  
+
+  
+
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0%;  
+    margin-top: 25px;
+  }
+
+
+  #name {
+    border-radius: 0%;
+    width: 300px;
+    height: 45px;
+    border: none;
+  }
+
+  #mail {
+    border-radius: 0%;
+    margin-top: 30px;
+    width: 300px;
+    height: 45px;
+    border: none;
+  }
+
+  #number {
+    border-radius: 0%;
+    margin-top: 30px;
+    width: 300px;
+    height: 45px;
+    border: none;
+  }
+
+  #message {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .infoText {
+    margin-top: 30px;
+  }
+
+
+#message:focus {
+    outline: 2px solid #F10422 ;
+  }
+  #name:focus {
+    outline: 2px solid #F10422 ;
+  }
+  
+  #mail:focus {
+    outline: 2px solid #F10422;
+  }
+  
+  #number:focus {
+    outline: 2px solid #F10422;
+  }
+
+  
+  
+  input {
+    font-family: 'Montserrat', sans-serif;
+  }
+ 
+  
+  #backGroundImg {
+    background-image: url(../Artboard.png);
+    background-position: center;
+    height: 900px;
+  }
+  
+  
+  
+  img {
     margin: 0;
-    padding-top: 50px;    
-    font-size: 30px;
-}
-.MessageUs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 130px;
-  margin-left: 100px;
-  margin-bottom: 0px;
-}
+  }
+  
+  input#phoneNum::-webkit-outer-spin-button,
+  input#phoneNum::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  
+  #Message {
+    font-family: 'Montserrat', sans-serif;
+  }
 
-input {
-  font-family: 'Montserrat', sans-serif;
-}
+  #button {
 
-#Name {
-    margin-bottom: 50px;
-    border: none;
-    width: 280px;
+    color: white;
+    background-color: #F10422;
+    display: inline-block;
+    padding: 20px 40px;
+    align-items: center;
+    margin-right: 40px;
+
     
-}
+  }
 
-#Email {
-  border: none;
-  width: 280px;
-}
-
-#phoneNum {
-  margin-bottom: 50px;
-  border: none;
-  width: 280px;
-}
-#Message {
-    margin-top: 50px;
-    height: 180px;
-    width: 280px;
-    margin-right: 100px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding: 15px;
-    box-sizing: border-box;
-
-}
+  .alignButton {
+    display: flex;
+    justify-content: center;
+  }
 
 
-
-#Message:focus {
-  outline: 3px solid #F10422 ;
-}
-#Name:focus {
-  outline: 3px solid #F10422 ;
-}
-
-#Email:focus {
-  outline: 3px solid #F10422;
-}
-
-#phoneNum:focus {
-  outline: 2px solid #F10422;
-}
-
-#backGroundImg {
-  background-image: url(../tike-blur.jpg);
-  background-position: center;
-  height: 800px;
-}
-
-
-
-img {
-  margin: 0;
-}
-
-input#phoneNum::-webkit-outer-spin-button,
-input#phoneNum::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-#Message {
-  font-family: 'Montserrat', sans-serif;
-}
-
-#sumbitButton {
-  background-color: #F10422;
-  padding: 20px 40px;
-  margin-right: 100px;
-  color: white;
-}
-
-#sumbitButton:hover {
-  background-color: #aa3a47;
   
-}
-  
+@media(max-width:760px) {
+    #messageUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #inputs {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    #message {
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+        padding: 10px;
+    }
+
+    #info {
+        margin-bottom: 20px;
+    }
+
+    #button {
+      margin-right: 0px;
+    }
+
+}
+    
+  
+  

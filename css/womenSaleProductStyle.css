@@ -79,14 +79,14 @@ a#favorite {
     margin-bottom: 30px;
 } 
 
- a#size {
+ a.size {
     color: black;
     padding: 10px;
     background-color: #D8D8D8;
     text-align: center;
 }
 
-a#size:hover {
+a.size:hover {
     background-color: #eaeaea;
 }
 
